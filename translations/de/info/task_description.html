@@ -1,0 +1,27 @@
+<!-- Describe task in general -->
+
+<p>
+    Geben Sie {% if is_js %}ein Array{% else %}eine Liste{% endif %} von Elementen, von denen einige dupliziert sein können, und erstellen Sie ein neues {% if is_js %}Array{% else %}Iterable{% endif %}, das ansonsten dasselbe ist wie <b class="code">items</b>, aber nur bis zu <b class="code">k</b> Vorkommen jedes Elements beibehalten wird und alle Vorkommen dieses Elements nach diesen ersten <b class="code">k</b> verworfen werden. Beachten Sie auch den kontraintuitiven, aber dennoch
+    völlig legitime Randfall von <b class="code">k == 0</b>, der eine gut definierte Antwort in Form einer leeren Liste hat!
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> {% if is_js %}Ein Array und eine Zahl{% else %}Eine Liste und eine ganze Zahl{% endif %}.
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> {% if is_js %}Ein Array{% else %}Liste oder ein anderes Iterable (Tupel, Iterator, Generator){% endif %}. 
+</p>
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+    <i>
+        Diese Aufgabe stammt aus dem Kurs CCPS 109 Computer Science I, der von <a target="_blank" href="https://github.com/ikokkari">Ilkka Kokkarinen</a> unterrichtet wird.
+    </i>
+</p>
